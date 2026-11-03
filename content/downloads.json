@@ -1,0 +1,54 @@
+{
+ "groups": [
+  {
+   "id": "mantra",
+   "title": {
+    "hi": "मन्त्र",
+    "en": "Mantras"
+   },
+   "items": [
+    {
+     "file": "durvakshata-dana-mantra.pdf",
+     "title": "दूर्वाक्षतदानमन्त्रः"
+    },
+    {
+     "file": "yajnopavita-dharana-mantra.pdf",
+     "title": "यज्ञोपवीतधारणमन्त्र"
+    },
+    {
+     "file": "graha-shanti-mantra-samaveda.pdf",
+     "title": "ग्रहाणां सामवेदीय (छन्दोग) शान्तिमन्त्राः"
+    },
+    {
+     "file": "graha-shanti-mantra-yajurveda.pdf",
+     "title": "ग्रहाणां यजुर्वेदीय (वाजसनेयि) शान्तिमन्त्राः"
+    }
+   ]
+  },
+  {
+   "id": "parva",
+   "title": {
+    "hi": "पर्व सूची और गोचर",
+    "en": "Festival lists and transits"
+   },
+   "items": [
+    {
+     "file": "gochara-phala-bodhaka-chakra.pdf",
+     "title": "गोचरफलबोधकचक्रम्"
+    },
+    {
+     "file": "parva-suchi-2022-23.pdf",
+     "title": "2022-23 वर्षीय विशिष्टपर्व सूची"
+    },
+    {
+     "file": "parva-suchi-2021-22.pdf",
+     "title": "2021-22 वर्षीय विशिष्टपर्व सूची"
+    },
+    {
+     "file": "parva-suchi-2020-21.pdf",
+     "title": "2020-21 वर्षीय विशिष्टपर्व सूची"
+    }
+   ]
+  }
+ ]
+}

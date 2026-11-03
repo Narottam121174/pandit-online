@@ -1,0 +1,199 @@
+{
+ "pujas": [
+  {
+   "slug": "prata-surya-aradhana",
+   "title": {
+    "hi": "प्रातः सूर्य आराधना",
+    "en": "Morning Sun Worship"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "durga-108-naam",
+   "title": {
+    "hi": "माँ दुर्गा के एक सौ आठ नाम",
+    "en": "108 Names of Maa Durga"
+   },
+   "built": true,
+   "kind": "names"
+  },
+  {
+   "slug": "satyanarayan",
+   "title": {
+    "hi": "सत्यनारायण पूजा",
+    "en": "Satyanarayan Puja"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "durga-puja",
+   "title": {
+    "hi": "दुर्गा पूजा",
+    "en": "Durga Puja"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "hanuman",
+   "title": {
+    "hi": "हनुमान पूजा पद्धति",
+    "en": "Hanuman Puja Paddhati"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "saraswati-puja",
+   "title": {
+    "hi": "सरस्वती पूजा पद्धति",
+    "en": "Saraswati Puja Paddhati"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "chauthchandra",
+   "title": {
+    "hi": "चौठचन्द्र पूजा पद्धति",
+    "en": "Chauthchandra Puja Paddhati"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "ganesh-puja",
+   "title": {
+    "hi": "गणेश पूजा",
+    "en": "Ganesh Puja"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "vishwakarma",
+   "title": {
+    "hi": "विश्वकर्मा पूजा पद्धति",
+    "en": "Vishwakarma Puja Paddhati"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "mahashivratri",
+   "title": {
+    "hi": "महाशिवरात्रि पूजा",
+    "en": "Mahashivratri Puja"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "raksha-bandhan",
+   "title": {
+    "hi": "रक्षा बंधन",
+    "en": "Raksha Bandhan"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "diwali-mahalakshmi",
+   "title": {
+    "hi": "दिवाली महालक्ष्मी पूजा",
+    "en": "Diwali Mahalakshmi Puja"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "kojagara-lakshmi",
+   "title": {
+    "hi": "कोजागरा लक्ष्मी पूजा",
+    "en": "Kojagara Lakshmi Puja"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "anant",
+   "title": {
+    "hi": "अनन्त पूजा पद्धति",
+    "en": "Anant Puja Paddhati"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "chhath",
+   "title": {
+    "hi": "छठ पूजा",
+    "en": "Chhath Puja"
+   },
+   "built": true,
+   "kind": "puja"
+  },
+  {
+   "slug": "janmashtami",
+   "title": {
+    "hi": "कृष्ण जन्माष्टमी पूजा पद्धति",
+    "en": "Krishna Janmashtami Puja Paddhati"
+   },
+   "built": true,
+   "kind": "puja"
+  }
+ ],
+ "aartis": [
+  {
+   "slug": "jai-jagdish",
+   "title": {
+    "hi": "ऊँ जय जगदीश हरे",
+    "en": "Om Jai Jagdish Hare"
+   }
+  },
+  {
+   "slug": "ambaji",
+   "title": {
+    "hi": "श्री अम्बाजी की आरती",
+    "en": "Aarti of Shri Ambaji"
+   }
+  },
+  {
+   "slug": "shiv",
+   "title": {
+    "hi": "आरती शिवजी की",
+    "en": "Aarti of Shiva"
+   }
+  },
+  {
+   "slug": "saraswati",
+   "title": {
+    "hi": "आरती श्री सरस्वती जी की",
+    "en": "Aarti of Saraswati"
+   }
+  },
+  {
+   "slug": "lakshmi",
+   "title": {
+    "hi": "आरती श्री लक्ष्मी जी की",
+    "en": "Aarti of Lakshmi"
+   }
+  },
+  {
+   "slug": "ganesh",
+   "title": {
+    "hi": "आरती श्री गणेशजी की",
+    "en": "Aarti of Ganesh"
+   }
+  },
+  {
+   "slug": "durga",
+   "title": {
+    "hi": "आरती श्री दुर्गाजी की",
+    "en": "Aarti of Durga"
+   }
+  }
+ ]
+}
