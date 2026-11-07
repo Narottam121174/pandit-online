@@ -10,7 +10,7 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.panditonline.org'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://panditonline.org'),
   applicationName: 'Pandit Online',
   openGraph: { siteName: 'Pandit Online', type: 'website' },
 }
