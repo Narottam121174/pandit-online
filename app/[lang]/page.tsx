@@ -4,7 +4,7 @@ import Chevron from '@/components/Chevron'
 import Footer from '@/components/Footer'
 import Masthead from '@/components/Masthead'
 import Plate from '@/components/Plate'
-import { getCatalog, getGodImage, type Lang } from '@/lib/content'
+import { getCatalog, getGodImage, LANGS, type Lang } from '@/lib/content'
 import { pageMeta, t } from '@/lib/i18n'
 
 export function generateMetadata({ params }: { params: { lang: Lang } }): Metadata {
@@ -15,6 +15,10 @@ export function generateMetadata({ params }: { params: { lang: Lang } }): Metada
     alternates: { canonical: `/${params.lang}/`, languages: { hi: '/hi/', en: '/en/' } },
     openGraph: { title: m.title, description: m.description, locale: params.lang === 'hi' ? 'hi_IN' : 'en_IN' },
   }
+}
+
+export function generateStaticParams() {
+  return LANGS.map((lang) => ({ lang }))
 }
 
 export default function Home({ params }: { params: { lang: Lang } }) {
