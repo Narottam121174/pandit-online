@@ -4,7 +4,7 @@ import { useState } from 'react'
 import type { Lang } from '@/lib/content'
 import { t } from '@/lib/i18n'
 
-const ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT
+const ENDPOINT = 'https://formsubmit.co/ajax/momishra2006@gmail.com'
 
 type State = 'idle' | 'sending' | 'sent' | 'failed'
 
@@ -12,15 +12,13 @@ export default function ContactForm({ lang }: { lang: Lang }) {
   const f = t(lang).form
   const [state, setState] = useState<State>('idle')
 
-  if (!ENDPOINT) return <p className="notice">{f.off}</p>
-
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const data = new FormData(e.currentTarget)
-    if (data.get('_gotcha')) return
+    if (data.get('_honey')) return
     setState('sending')
     try {
-      const res = await fetch(ENDPOINT as string, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+      const res = await fetch(ENDPOINT, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
       setState(res.ok ? 'sent' : 'failed')
       if (res.ok) e.currentTarget.reset()
     } catch {
@@ -30,6 +28,9 @@ export default function ContactForm({ lang }: { lang: Lang }) {
 
   return (
     <form className="form" onSubmit={onSubmit}>
+      <input type="hidden" name="_subject" value="Pandit Online: new message" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
       <label>
         <span>{f.name}</span>
         <input name="name" type="text" autoComplete="name" required />
@@ -42,7 +43,7 @@ export default function ContactForm({ lang }: { lang: Lang }) {
         <span>{f.message}</span>
         <textarea name="message" rows={6} required />
       </label>
-      <input className="hp" name="_gotcha" type="text" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+      <input className="hp" name="_honey" type="text" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       <button type="submit" disabled={state === 'sending'}>
         {state === 'sending' ? f.sending : f.send}
       </button>

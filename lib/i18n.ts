@@ -64,7 +64,6 @@ export const ui = {
       sending: 'भेजा जा रहा है…',
       sent: 'धन्यवाद। आपका सन्देश भेज दिया गया है।',
       failed: 'सन्देश नहीं भेजा जा सका। कृपया फिर प्रयास करें।',
-      off: 'संपर्क फ़ॉर्म अभी चालू नहीं है।',
     },
     notice: null as string | null,
     noticeAarti: null as string | null,
@@ -127,7 +126,6 @@ export const ui = {
       sending: 'Sending…',
       sent: 'Thank you. Your message has been sent.',
       failed: 'The message could not be sent. Please try again.',
-      off: 'The contact form is not switched on yet.',
     },
     notice:
       'This vidhi is published in Hindi and Sanskrit, exactly as the source gives it. An English translation has not been prepared yet.',
