@@ -23,8 +23,10 @@ export default function StepNav({ links, label }: { links: StepLink[]; label: st
   }, [links])
 
   useEffect(() => {
-    const chip = listRef.current?.querySelector<HTMLElement>('[aria-current="true"]')
-    chip?.scrollIntoView({ inline: 'center', block: 'nearest' })
+    const list = listRef.current
+    const chip = list?.querySelector<HTMLElement>('[aria-current="true"]')
+    if (!list || !chip) return
+    list.scrollTo({ left: chip.offsetLeft - list.clientWidth / 2 + chip.offsetWidth / 2, behavior: 'smooth' })
   }, [active])
 
   return (

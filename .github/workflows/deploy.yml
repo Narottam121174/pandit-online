@@ -17,8 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      NEXT_PUBLIC_CONTACT_EMAIL: momishra2006@gmail.com
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

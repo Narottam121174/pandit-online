@@ -86,3 +86,6 @@ export function getGodImage(slug: string): GodImage | null {
   const size = jpegSize(file)
   return size ? { src: asset(`/${rel}`), ...size } : null
 }
+
+export type Legal = { title: string; paragraphs: string[] }
+export const getLegal = (name: 'terms' | 'privacy') => read<Legal>(`legal/${name}.json`)

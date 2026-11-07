@@ -5,7 +5,6 @@ import type { Lang } from '@/lib/content'
 import { t } from '@/lib/i18n'
 
 const ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT
-const EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL
 
 type State = 'idle' | 'sending' | 'sent' | 'failed'
 
@@ -13,17 +12,12 @@ export default function ContactForm({ lang }: { lang: Lang }) {
   const f = t(lang).form
   const [state, setState] = useState<State>('idle')
 
-  if (!ENDPOINT && !EMAIL) return <p className="notice">{f.off}</p>
+  if (!ENDPOINT) return <p className="notice">{f.off}</p>
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const data = new FormData(e.currentTarget)
     if (data.get('_gotcha')) return
-    if (!ENDPOINT && EMAIL) {
-      const body = `${data.get('message')}\n\n${data.get('name')} <${data.get('email')}>`
-      window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent('Pandit Online')}&body=${encodeURIComponent(body)}`
-      return
-    }
     setState('sending')
     try {
       const res = await fetch(ENDPOINT as string, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
